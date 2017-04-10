@@ -1,0 +1,118 @@
+﻿2017-02-10 05:01:02.129 +13:00 [Information] Starting UnityContainer
+2017-02-10 05:01:02.254 +13:00 [Debug] Loading Unity configuration from web.config
+2017-02-10 05:01:02.379 +13:00 [Debug] Registering ILogger
+2017-02-10 05:01:02.379 +13:00 [Debug] Registering IUnityContainer
+2017-02-10 05:01:02.379 +13:00 [Information] UnityContainer is ready
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IUnityContainer", Type="Microsoft.Practices.Unity.IUnityContainer", Lifecycle="ContainerControlledLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IQuoteHandlerFactory", Type="Iag.DigitalWeb.QuoteManager.Host.QuoteHandlerFactory", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IClock", Type="Iag.DigitalWeb.QuoteManager.Data.SystemClock", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="QuoteManagerContext", Type="Iag.DigitalWeb.QuoteManager.Data.QuoteManagerContext", Lifecycle="HierarchicalLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IRequestContext", Type="Iag.DigitalWeb.QuoteManager.Host.RequestContext", Lifecycle="HierarchicalLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IQuoteRepository", Type="Iag.DigitalWeb.QuoteManager.Data.QuoteRepository", Lifecycle="HierarchicalLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="ICalculateAnnualPremium", Type="Iag.DigitalWeb.QuoteManager.Common.PolicyManagement.CalculateAnnualPremiumService", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="ICalculateInstalmentPremium", Type="Iag.DigitalWeb.QuoteManager.Common.PolicyManagement.CalculateInstalmentPremiumService", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IQuoteNumberProvider", Type="Iag.DigitalWeb.QuoteManager.Data.QuoteNumberProvider", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IQuoteHandler", Type="Iag.DigitalWeb.QuoteManager.ASBHouse.ASBHouseRetrieveQuoteHandler", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IQuoteHandler", Type="Iag.DigitalWeb.QuoteManager.ASBHouse.ASBHouseRecordQuoteHandler", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="IASBConfiguration", Type="Iag.DigitalWeb.QuoteManager.ASBHouse.ASBConfiguration", Lifecycle="TransientLifetimeManager"
+2017-02-10 05:01:02.410 +13:00 [Debug] * Type="ILogger", Type="Iag.DigitalWeb.QuoteManager.Interface.ILogger", Lifecycle="ContainerControlledLifetimeManager"
+2017-02-10 05:01:02.457 +13:00 [Debug] Creating service behaviour for ChannelDispatcher "http://tempuri.org/:BasicHttpsBinding"
+2017-02-10 05:01:02.457 +13:00 [Debug] Creating service behaviour for https://w12dvhiis037.ldstatdv.net/QuoteManager/QuoteManagerService.svc
+2017-02-10 05:01:02.457 +13:00 [Debug] Creating service behaviour for ChannelDispatcher "ServiceMetadataBehaviorHttpGetBinding"
+2017-02-10 05:01:02.457 +13:00 [Debug] Creating service behaviour for https://w12dvhiis037.ldstatdv.net/QuoteManager/QuoteManagerService.svc
+2017-02-10 05:57:41.761 +13:00 [Debug] GetInstance(InstanceContext instanceContext, Message message): Creating unity child container and Resolving type "Iag.DigitalWeb.QuoteManager.Host.QuoteManagerService"
+2017-02-10 05:57:52.995 +13:00 [Information] Received Record Quote request. CorrelationId="db4eb290-eee8-11e6-b9f1-005056bf4ce1"
+2017-02-10 05:57:53.402 +13:00 [Information] Calculating annual premium for quote
+2017-02-10 05:57:53.480 +13:00 [Debug] CalculateAnnualPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:12.042 +13:00 [Debug] GetInstance(InstanceContext instanceContext, Message message): Creating unity child container and Resolving type "Iag.DigitalWeb.QuoteManager.Host.QuoteManagerService"
+2017-02-10 05:58:12.042 +13:00 [Information] Received Record Quote request. CorrelationId="ee6ec900-eee8-11e6-8036-005056bf247e"
+2017-02-10 05:58:12.042 +13:00 [Information] Calculating annual premium for quote
+2017-02-10 05:58:12.058 +13:00 [Debug] CalculateAnnualPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:20.324 +13:00 [Debug] CalculateAnnualPremium(): Closing connection to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:20.324 +13:00 [Debug] CalculateAnnualPremium(): Closing connection to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:20.355 +13:00 [Debug] CalculateInstalmentPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:20.355 +13:00 [Debug] CalculateInstalmentPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:58:42.902 +13:00 [Debug] CalculateInstalmentPremium(): Closing connection
+2017-02-10 05:58:42.902 +13:00 [Debug] CalculateInstalmentPremium(): Closing connection
+2017-02-10 05:58:50.527 +13:00 [Debug] Creating new quote number "D001037"
+2017-02-10 05:58:50.527 +13:00 [Debug] Creating new quote number "D001036"
+2017-02-10 05:59:00.105 +13:00 [Debug] Using expiry days of "30" to calculate quote expiry
+2017-02-10 05:59:00.121 +13:00 [Debug] Using expiry days of "30" to calculate quote expiry
+2017-02-10 05:59:00.168 +13:00 [Debug] Saving quote "D001037" to repository
+2017-02-10 05:59:00.168 +13:00 [Debug] Saving quote "D001036" to repository
+2017-02-10 05:59:00.855 +13:00 [Information] Finished Record Quote request. CorrelationId="ee6ec900-eee8-11e6-8036-005056bf247e"
+2017-02-10 05:59:00.855 +13:00 [Information] Finished Record Quote request. CorrelationId="db4eb290-eee8-11e6-b9f1-005056bf4ce1"
+2017-02-10 05:59:01.402 +13:00 [Debug] ReleaseInstance(InstanceContext instanceContext, object instance) : Disposing of of unity child container
+2017-02-10 05:59:01.402 +13:00 [Debug] ReleaseInstance(InstanceContext instanceContext, object instance) : Disposing of of unity child container
+2017-02-10 05:59:20.996 +13:00 [Debug] GetInstance(InstanceContext instanceContext, Message message): Creating unity child container and Resolving type "Iag.DigitalWeb.QuoteManager.Host.QuoteManagerService"
+2017-02-10 05:59:20.996 +13:00 [Information] Received Record Quote request. CorrelationId="140b14c0-eee9-11e6-b9f1-005056bf4ce1"
+2017-02-10 05:59:20.996 +13:00 [Information] Calculating annual premium for quote
+2017-02-10 05:59:20.996 +13:00 [Debug] CalculateAnnualPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:59:23.089 +13:00 [Debug] CalculateAnnualPremium(): Closing connection to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:59:23.105 +13:00 [Debug] CalculateInstalmentPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 05:59:25.668 +13:00 [Debug] CalculateInstalmentPremium(): Closing connection
+2017-02-10 05:59:25.699 +13:00 [Debug] Creating new quote number "D001038"
+2017-02-10 05:59:25.699 +13:00 [Debug] Using expiry days of "30" to calculate quote expiry
+2017-02-10 05:59:25.714 +13:00 [Debug] Saving quote "D001038" to repository
+2017-02-10 05:59:25.714 +13:00 [Information] Finished Record Quote request. CorrelationId="140b14c0-eee9-11e6-b9f1-005056bf4ce1"
+2017-02-10 05:59:25.714 +13:00 [Debug] ReleaseInstance(InstanceContext instanceContext, object instance) : Disposing of of unity child container
+2017-02-10 06:02:21.590 +13:00 [Debug] GetInstance(InstanceContext instanceContext, Message message): Creating unity child container and Resolving type "Iag.DigitalWeb.QuoteManager.Host.QuoteManagerService"
+2017-02-10 06:02:21.668 +13:00 [Information] Received Record Quote request. CorrelationId="7a371640-eee9-11e6-8036-005056bf247e"
+2017-02-10 06:02:21.668 +13:00 [Information] Calculating annual premium for quote
+2017-02-10 06:02:21.668 +13:00 [Debug] CalculateAnnualPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 06:02:23.105 +13:00 [Debug] CalculateAnnualPremium(): Closing connection to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 06:02:23.105 +13:00 [Debug] CalculateInstalmentPremium(): Creating client to https://soaesb.dit.ldstatdv.net/router/plm.v2
+2017-02-10 06:02:25.340 +13:00 [Debug] CalculateInstalmentPremium(): Closing connection
+2017-02-10 06:02:29.715 +13:00 [Debug] Saving quote "D001038" to repository
+2017-02-10 06:02:29.809 +13:00 [Information] Finished Record Quote request. CorrelationId="7a371640-eee9-11e6-8036-005056bf247e"
+2017-02-10 06:02:29.809 +13:00 [Debug] ReleaseInstance(InstanceContext instanceContext, object instance) : Disposing of of unity child container
+
+
+abit nonsense
+
+dfafasdfasd
+d
+fadfasdfasdfasdfasf
+
+
+
+what is going one please ?
+
+asdfasdfa
+svcasdfadsf
+
+
+adfasdfasdfaf
+asdfadfasdfasdfadsfa
+
+
+
+
+
+
+nuts nuts nuts
+
+love is in the air!! :)
+
+
+
+
+adfasdfasdfaf
+asdfadfasdfasdfadsfa
+
+
+
+
+adfasdfasdfaf
+asdfadfasdfasdfadsfa
+
+
+
+
+adfasdfasdfaf
+asdfadfasdfasdfadsfa
+
+
+
+
+Theresa has worked with me to test a simulation of when the mom api is down and the result is the paysuccess template screen is shown with a 500 error status from the DPS failproof api. This seems to be how the code functions after going through it in DPS failproof also. Was this intended behaviour maybe ? In the meantime I’ve asked dps for clarification on returning a status code other than 500 to distinguish between errors caused by the mom being down and declined card errors.
