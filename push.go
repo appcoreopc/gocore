@@ -12,6 +12,7 @@ import (
 )
 
 var image []byte
+var defaultFileName string = "app.txt"
 
 type CoreFile struct {
 }
@@ -47,38 +48,11 @@ func handleFile(w http.ResponseWriter, r *http.Request) {
 
 	defer conn.Close()
 
-	/*
-		bwriter.WriteString("lets go man!!!")
-
-		time.Sleep(1 * time.Second)
-		time.Sleep(1 * time.Second)
-		bwriter.WriteString("lets go man!!!" + time.Now().String())
-		time.Sleep(1 * time.Second)
-		time.Sleep(1 * time.Second)
-		bwriter.WriteString("lets go man!!!" + time.Now().String())
-		time.Sleep(1 * time.Second)
-
-		println("done and flushing out contents!!")
-
-		bwriter.Flush()
-	*/
-
-	/*
-		for i := 0; i < 4; i++ {
-			time.Sleep(1 * time.Second)
-			bwriter.WriteString("lets go man!!!" + time.Now().String())
-			bwriter.Flush() // you need this, otherwise no output
-		}
-
-	*/
-
-	file, fopenOk := os.Open("app.txt")
+	file, fopenOk := os.Open(defaultFileName)
 
 	if fopenOk != nil {
 		http.Error(w, "error reading file", http.StatusInternalServerError)
 	}
-
-	println("reading file")
 
 	reader := bufio.NewReader(file)
 	buff := make([]byte, 1024)
@@ -93,15 +67,15 @@ func handleFile(w http.ResponseWriter, r *http.Request) {
 				c := string(buff)
 				bwriter.WriteString(c)
 				bwriter.Flush()
-				println("flusing" + c)
-				time.Sleep(5 * time.Second)
+				//time.Sleep(5 * time.Second)
 				continue
 			}
 			if e == io.EOF {
 				break
 			}
-		} else if n == 0 {
-			println("statis mode!")
+
+		} else if n == 0 { // if no new content
+			// putting on a wait time
 			time.Sleep(5 * time.Second)
 		}
 
